@@ -1,0 +1,411 @@
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 9999;
+
+    padding: 22px 0;
+
+    transition: all .4s ease;
+
+}
+
+/* Scroll Effect */
+
+.navbar.scrolled {
+
+    background: rgba(255,255,255,.82);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    border-bottom: 1px solid rgba(255,255,255,.25);
+
+    padding: 14px 0;
+
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.nav-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo a{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.logo a:hover{
+
+    color:var(--secondary);
+
+}
+
+/* =========================================================
+   DESKTOP MENU
+========================================================= */
+
+.desktop-menu{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.desktop-menu ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.desktop-menu ul li{
+
+    position:relative;
+
+}
+
+.desktop-menu ul li a{
+
+    color:var(--black);
+
+    font-weight:500;
+
+    font-size:15px;
+
+    transition:.35s;
+
+    letter-spacing:.4px;
+
+}
+
+/* Gold underline */
+
+.desktop-menu ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:.35s;
+
+}
+
+.desktop-menu ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+.desktop-menu ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/* =========================================================
+   BOOK BUTTON
+========================================================= */
+
+.book-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Shine */
+
+.book-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:40%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.4);
+
+    transform:skewX(-25deg);
+
+}
+
+.book-btn:hover::before{
+
+    animation:buttonShine .8s linear;
+
+}
+
+.book-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 15px 35px rgba(107,29,29,.28);
+
+}
+
+/* =========================================================
+   MOBILE MENU ICON
+========================================================= */
+
+.mobile-toggle{
+
+    display:none;
+
+    font-size:1.6rem;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+}
+
+/* =========================================================
+   SHINE ANIMATION
+========================================================= */
+
+@keyframes buttonShine{
+
+    100%{
+
+        left:180%;
+
+    }
+
+}
+
+/* =========================================================
+   ACTIVE LINK
+========================================================= */
+
+.desktop-menu ul li a.active{
+
+    color:var(--primary);
+
+}
+
+.desktop-menu ul li a.active::after{
+
+    width:100%;
+
+}
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
+
+.desktop-menu ul li{
+
+    transition:.3s;
+
+}
+
+.desktop-menu ul li:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================================================
+   MOBILE NAVIGATION
+   (Full functionality will come with JavaScript later)
+========================================================= */
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:320px;
+
+    height:100vh;
+
+    background:#FFF9F2;
+
+    box-shadow:-10px 0 40px rgba(0,0,0,.15);
+
+    padding:90px 35px;
+
+    transition:.45s ease;
+
+    z-index:99999;
+
+}
+
+.mobile-menu.active{
+
+    right:0;
+
+}
+
+.mobile-menu ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.mobile-menu ul li a{
+
+    font-size:18px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.mobile-menu .book-btn{
+
+    margin-top:35px;
+
+    width:100%;
+
+}
+
+/* =========================================================
+   MOBILE OVERLAY
+========================================================= */
+
+.nav-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9998;
+
+}
+
+.nav-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:992px){
+
+    .desktop-menu{
+
+        display:none;
+
+    }
+
+    .book-btn{
+
+        display:none;
+
+    }
+
+    .mobile-toggle{
+
+        display:block;
+
+    }
+
+}

@@ -1,0 +1,436 @@
+/* ===========================================================
+                    GLOBAL ANIMATIONS
+=========================================================== */
+
+/* Smooth Fade Up */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(70px);
+    transition:1s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Fade Left */
+
+.fade-left{
+    opacity:0;
+    transform:translateX(-70px);
+    transition:1s ease;
+}
+
+.fade-left.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Fade Right */
+
+.fade-right{
+    opacity:0;
+    transform:translateX(70px);
+    transition:1s ease;
+}
+
+.fade-right.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Zoom */
+
+.zoom-in{
+    opacity:0;
+    transform:scale(.8);
+    transition:.9s ease;
+}
+
+.zoom-in.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* ===========================================================
+                        LOADER
+=========================================================== */
+
+.loader{
+
+    animation:loaderHide .8s ease 3.2s forwards;
+
+}
+
+.loader-logo{
+
+    animation:loaderZoom 2s infinite alternate;
+
+}
+
+@keyframes loaderZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+@keyframes loaderHide{
+
+    to{
+
+        opacity:0;
+
+        visibility:hidden;
+
+    }
+
+}
+
+/* ===========================================================
+                    FLOATING FOOD
+=========================================================== */
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================================
+                    ROTATE PLATE
+=========================================================== */
+
+.rotatePlate{
+
+    animation:plateRotate 18s linear infinite;
+
+}
+
+@keyframes plateRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================================================
+                    STEAM
+=========================================================== */
+
+.steam{
+
+    animation:steamMove 5s linear infinite;
+
+}
+
+@keyframes steamMove{
+
+    from{
+
+        transform:translateY(0) scale(.8);
+
+        opacity:.7;
+
+    }
+
+    to{
+
+        transform:translateY(-160px) scale(1.8);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================================================
+                    GLOW
+=========================================================== */
+
+.glow{
+
+    animation:goldGlow 2s infinite alternate;
+
+}
+
+@keyframes goldGlow{
+
+    from{
+
+        box-shadow:
+
+        0 0 10px rgba(200,155,60,.3);
+
+    }
+
+    to{
+
+        box-shadow:
+
+        0 0 30px rgba(200,155,60,.8);
+
+    }
+
+}
+
+/* ===========================================================
+                    BUTTON RIPPLE
+=========================================================== */
+
+.primary-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.primary-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,255,255,.18);
+
+    transform:translateX(-120%);
+
+}
+
+.primary-btn:hover::after{
+
+    animation:ripple .8s;
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:translateX(120%);
+
+    }
+
+}
+
+/* ===========================================================
+                    LEAF SWING
+=========================================================== */
+
+.leaf{
+
+    animation:leafSwing 6s ease-in-out infinite;
+
+}
+
+@keyframes leafSwing{
+
+    0%{
+
+        transform:rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:rotate(10deg);
+
+    }
+
+    50%{
+
+        transform:rotate(-8deg);
+
+    }
+
+    75%{
+
+        transform:rotate(6deg);
+
+    }
+
+    100%{
+
+        transform:rotate(0deg);
+
+    }
+
+}
+
+/* ===========================================================
+                    SPIN IN
+=========================================================== */
+
+.spin-in{
+
+    animation:spinIn 1s ease forwards;
+
+}
+
+@keyframes spinIn{
+
+    from{
+
+        opacity:0;
+
+        transform:rotate(-180deg) scale(.2);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:rotate(0deg) scale(1);
+
+    }
+
+}
+
+/* ===========================================================
+                    HOVER LIFT
+=========================================================== */
+
+.hover-lift{
+
+    transition:.35s;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================================================
+                    IMAGE ZOOM
+=========================================================== */
+
+.zoom-hover{
+
+    overflow:hidden;
+
+}
+
+.zoom-hover img{
+
+    transition:.6s;
+
+}
+
+.zoom-hover:hover img{
+
+    transform:scale(1.1);
+
+}
+
+/* ===========================================================
+                    TEXT SHINE
+=========================================================== */
+
+.shine{
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #C89B3C,
+        #ffffff
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:textShine 4s linear infinite;
+
+}
+
+@keyframes textShine{
+
+    from{
+
+        background-position:-300%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+/* ===========================================================
+                    SCROLL DOWN
+=========================================================== */
+
+.bounce{
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(12px);
+
+    }
+
+}

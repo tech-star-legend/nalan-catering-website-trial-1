@@ -1,0 +1,360 @@
+/* ==========================================================
+                    HERO SECTION
+========================================================== */
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+    url("../images/hero/hero-bg.jpg") center center/cover no-repeat;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to right,
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.15));
+    z-index:1;
+}
+
+.hero-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+.hero-content{
+    color:#fff;
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    color:#fff;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+
+    margin-bottom:30px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.hero-content h1{
+
+    font-size:5rem;
+
+    color:#fff;
+
+    margin-bottom:30px;
+
+    line-height:1.08;
+
+}
+
+.hero-content p{
+
+    color:#f5f5f5;
+
+    max-width:620px;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+    font-size:1.08rem;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:95%;
+
+    max-width:650px;
+
+    animation:foodFloat 5s ease-in-out infinite;
+
+    filter:drop-shadow(0 25px 45px rgba(0,0,0,.35));
+
+}
+
+/* =====================================
+        GOLDEN CIRCLE
+===================================== */
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(200,155,60,.45),
+    transparent 70%);
+
+    z-index:-1;
+
+}
+
+/* =====================================
+            STEAM
+===================================== */
+
+.steam{
+
+    position:absolute;
+
+    width:16px;
+
+    height:120px;
+
+    background:linear-gradient(to top,
+    rgba(255,255,255,.55),
+    transparent);
+
+    filter:blur(12px);
+
+    opacity:.6;
+
+    border-radius:50%;
+
+}
+
+.steam1{
+
+    left:42%;
+
+    top:8%;
+
+    animation:steamRise 4s linear infinite;
+
+}
+
+.steam2{
+
+    left:50%;
+
+    top:0;
+
+    animation:steamRise 5s linear infinite;
+
+}
+
+.steam3{
+
+    left:58%;
+
+    top:12%;
+
+    animation:steamRise 4.5s linear infinite;
+
+}
+
+/* =====================================
+        SCROLL INDICATOR
+===================================== */
+
+.scroll-down{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:10;
+
+}
+
+.scroll-down span{
+
+    display:block;
+
+    width:28px;
+
+    height:48px;
+
+    border:2px solid #fff;
+
+    border-radius:40px;
+
+    position:relative;
+
+}
+
+.scroll-down span::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:6px;
+
+    height:10px;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:8px;
+
+    animation:scrollWheel 2s infinite;
+
+}
+
+/* =====================================
+        FLOATING LEAF
+===================================== */
+
+.hero::after{
+
+    content:"🍃";
+
+    position:absolute;
+
+    font-size:38px;
+
+    right:6%;
+
+    top:18%;
+
+    animation:leafFloat 8s ease-in-out infinite;
+
+    z-index:5;
+
+}
+
+/* =====================================
+        ANIMATIONS
+===================================== */
+
+@keyframes foodFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+@keyframes steamRise{
+
+    from{
+
+        transform:translateY(0) scale(.8);
+
+        opacity:.7;
+
+    }
+
+    to{
+
+        transform:translateY(-140px) scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes scrollWheel{
+
+    0%{
+
+        top:8px;
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        top:26px;
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes leafFloat{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:translateY(30px) rotate(20deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+}
