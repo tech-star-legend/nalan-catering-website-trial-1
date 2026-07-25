@@ -2,313 +2,1423 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Basic -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Nalan Catering | Premium Catering Services</title>
 
     <meta name="description"
-        content="Premium Traditional Tamil Nadu Catering for Weddings, Birthday Parties, Corporate Events and Special Occasions.">
-
-    <meta name="keywords"
-        content="Nalan Catering, Wedding Catering, Tamil Nadu Catering, Madurai Catering, South Indian Catering">
-
-    <meta name="author" content="Nalan Catering">
-
-    <!-- Google Fonts -->
+          content="Premium Traditional Catering Services in Tamil Nadu">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+    <link rel="stylesheet"
+          href="assets/css/style.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet"
+          href="assets/css/navbar.css">
 
+    <link rel="stylesheet"
+          href="assets/css/hero.css">
+
+    <link rel="stylesheet"
+          href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+          href="assets/css/responsive.css">
+
+<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/services.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/gallery.css">
+<link rel="stylesheet" href="assets/css/process.css">
+<link rel="stylesheet" href="assets/css/contact.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/testimonial.css">
+<link rel="stylesheet" href="assets/css/loader.css">
 </head>
 
 <body>
 
-    <!-- ===================== -->
-    <!-- Loader -->
-    <!-- ===================== -->
+<!-- ===========================
+            LOADER
+=========================== -->
 
-    <div class="loader">
+<div class="loader">
 
-        <div class="loader-logo">
+    <div class="loader-content">
 
-            <h1>NALAN</h1>
+        <img src="assets/images/logo/logo.png"
+             class="loader-logo"
+             alt="Logo">
 
-            <p>Premium Catering</p>
+        <h2>Nalan Catering</h2>
+
+        <p id="loading-text">
+
+            Preparing Traditional South Indian Feast...
+
+        </p>
+        <div class="loader-progress">
+        <span></span>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+            NAVBAR
+=========================== -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#home"
+           class="logo">
+
+            <img src="assets/images/logo/logo.png"
+                 alt="Logo">
+
+        </a>
+
+        <nav class="desktop-menu">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#gallery">Gallery</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <a href="#contact"
+           class="primary-btn desktop-btn">
+
+            Book Now
+
+        </a>
+
+        <button class="mobile-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ===========================
+        MOBILE MENU
+=========================== -->
+
+<div class="mobile-menu">
+
+    <button class="close-menu">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <a href="#home">Home</a>
+
+    <a href="#about">About</a>
+
+    <a href="#services">Services</a>
+
+    <a href="#menu">Menu</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#contact">Contact</a>
+
+    <a href="#contact"
+       class="primary-btn">
+
+        Book Catering
+
+    </a>
+
+</div>
+
+<!-- ===========================
+            HERO
+=========================== -->
+
+<section id="home"
+         class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content fade-left">
+
+            <span class="hero-tag">
+
+                ✨ Authentic Tamil Nadu Catering
+
+            </span>
+
+            <h1>
+
+                Every Celebration
+                Deserves
+                Extraordinary Food.
+
+            </h1>
+
+            <p>
+
+                We prepare authentic South Indian vegetarian
+                and non-vegetarian feasts for weddings,
+                receptions, birthdays, corporate events
+                and family functions with traditional taste
+                and modern hospitality.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact"
+                   class="primary-btn">
+
+                    Book Your Event
+
+                </a>
+
+                <a href="#menu"
+                   class="secondary-btn">
+
+                    Explore Menu
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image fade-right">
+
+            <img src="assets/images/hero/hero-food.png"
+                 alt="Traditional Meals">
+
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
 
         </div>
 
     </div>
 
-    <!-- ===================== -->
-    <!-- Header -->
-    <!-- ===================== -->
+    <div class="scroll-down">
 
-    <header class="navbar">
+        <span></span>
 
-        <div class="container nav-container">
+    </div>
 
-            <div class="logo">
+</section>
 
-                <a href="#">NALAN</a>
+<!-- ===========================
+        ABOUT SECTION
+=========================== -->
+<section id="about" class="about">
 
-            </div>
+    <div class="container">
 
-            <nav class="desktop-menu">
+        <div class="about-grid">
 
-                <ul>
+            <div class="about-image fade-left">
 
-                    <li><a href="#">Home</a></li>
+                <img src="assets/images/about/about-chef.jpg"
+                     alt="Master Chef">
 
-                    <li><a href="#">About</a></li>
+                <div class="experience-card">
 
-                    <li><a href="#">Services</a></li>
+                    <h2>25+</h2>
 
-                    <li><a href="#">Menu</a></li>
-
-                    <li><a href="#">Gallery</a></li>
-
-                    <li><a href="#">Contact</a></li>
-
-                </ul>
-
-            </nav>
-
-            <a href="#" class="book-btn">
-
-                Book Now
-
-            </a>
-
-            <div class="mobile-toggle">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
-
-        </div>
-
-    </header>
-
-    <!-- ===================== -->
-    <!-- Hero -->
-    <!-- ===================== -->
-
-    <section class="hero">
-
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-grid">
-
-            <div class="hero-content">
-
-                <span class="hero-tag">
-
-                    Authentic Tamil Hospitality
-
-                </span>
-
-                <h1>
-
-                    Turning Every Celebration
-                    Into A Grand Feast
-
-                </h1>
-
-                <p>
-
-                    Experience authentic South Indian catering crafted with
-                    traditional recipes, premium ingredients and heartfelt
-                    hospitality for weddings, receptions, corporate events,
-                    birthdays and every memorable celebration.
-
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#" class="primary-btn">
-
-                        Book Your Event
-
-                    </a>
-
-                    <a href="#" class="secondary-btn">
-
-                        Explore Menu
-
-                    </a>
+                    <span>Years of Excellence</span>
 
                 </div>
 
             </div>
 
-            <div class="hero-image">
+            <div class="about-content fade-right">
 
-                <div class="steam steam1"></div>
-                <div class="steam steam2"></div>
-                <div class="steam steam3"></div>
+                <span class="section-tag">
 
-                <img
-                    src="assets/images/hero/hero.png"
-                    alt="Traditional Tamil Catering">
+                    About Nalan Catering
+
+                </span>
+
+                <h2>
+
+                    Crafting Memorable Dining Experiences
+                    Across Tamil Nadu
+
+                </h2>
+
+                <p>
+
+                    Nalan Catering has been serving authentic South
+                    Indian cuisine with a perfect blend of tradition,
+                    quality and hospitality. Every function is treated
+                    as our own celebration, ensuring delicious food,
+                    elegant presentation and exceptional service.
+
+                </p>
+
+                <p>
+
+                    From intimate family gatherings to grand wedding
+                    receptions, our experienced chefs prepare every
+                    dish using fresh ingredients while preserving
+                    authentic flavours loved by generations.
+
+                </p>
+
+                <div class="about-features">
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Fresh Ingredients
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Traditional Recipes
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Experienced Chefs
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Hygienic Preparation
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Timely Service
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Premium Hospitality
+
+                    </div>
+
+                </div>
+
+                <a href="#contact"
+                   class="primary-btn">
+
+                    Book Catering
+
+                </a>
 
             </div>
 
         </div>
 
-        <div class="scroll-down">
+    </div>
 
-            <span></span>
+</section>
 
-        </div>
+<!-- ===========================
+      WHY CHOOSE US
+=========================== -->
 
-    </section>
+<section class="why-us">
 
-    <!-- ===================== -->
-    <!-- About -->
-    <!-- ===================== -->
+    <div class="container">
 
-    <section class="about">
+        <div class="section-heading">
 
-        <div class="container">
+            <span>
+
+                Why Choose Us
+
+            </span>
 
             <h2>
 
-                A Tradition of Taste,
-                A Legacy of Hospitality
+                More Than Catering,
+                We Create Memories
+
+            </h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card fade-up">
+
+                <i class="fa-solid fa-bowl-food"></i>
+
+                <h3>
+
+                    Authentic Taste
+
+                </h3>
+
+                <p>
+
+                    Traditional recipes prepared with
+                    premium ingredients.
+
+                </p>
+
+            </div>
+
+            <div class="why-card fade-up">
+
+                <i class="fa-solid fa-user-chef"></i>
+
+                <h3>
+
+                    Expert Chefs
+
+                </h3>
+
+                <p>
+
+                    Highly experienced chefs for
+                    every occasion.
+
+                </p>
+
+            </div>
+
+            <div class="why-card fade-up">
+
+                <i class="fa-solid fa-seedling"></i>
+
+                <h3>
+
+                    Fresh Ingredients
+
+                </h3>
+
+                <p>
+
+                    Quality vegetables, spices
+                    and premium raw materials.
+
+                </p>
+
+            </div>
+
+            <div class="why-card fade-up">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h3>
+
+                    On-Time Delivery
+
+                </h3>
+
+                <p>
+
+                    Timely setup and smooth
+                    event execution.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        STATISTICS
+=========================== -->
+
+<section class="statistics">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h2>
+
+                    25+
+
+                </h2>
+
+                <p>
+
+                    Years Experience
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>
+
+                    5000+
+
+                </h2>
+
+                <p>
+
+                    Events Completed
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>
+
+                    100000+
+
+                </h2>
+
+                <p>
+
+                    Happy Guests
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>
+
+                    100+
+
+                </h2>
+
+                <p>
+
+                    Delicious Dishes
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        SERVICES
+=========================== -->
+
+<section id="services"
+         class="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>
+
+                Our Services
+
+            </span>
+
+            <h2>
+
+                Catering For Every Occasion
+
+            </h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-ring"></i>
+
+                <h3>
+
+                    Wedding Catering
+
+                </h3>
+
+                <p>
+
+                    Grand traditional wedding
+                    catering with elegant service.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>
+
+                    Corporate Events
+
+                </h3>
+
+                <p>
+
+                    Professional catering for
+                    meetings and conferences.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+                <h3>
+
+                    Birthday Parties
+
+                </h3>
+
+                <p>
+
+                    Delicious menus for
+                    memorable celebrations.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-people-group"></i>
+
+                <h3>
+
+                    Family Functions
+
+                </h3>
+
+                <p>
+
+                    Traditional feast for
+                    every special gathering.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-fire-burner"></i>
+
+                <h3>
+
+                    Live Food Counters
+
+                </h3>
+
+                <p>
+
+                    Freshly prepared live
+                    cooking experience.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-utensils"></i>
+
+                <h3>
+
+                    Banana Leaf Meals
+
+                </h3>
+
+                <p>
+
+                    Authentic South Indian
+                    serving experience.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        MENU SECTION
+=========================== -->
+<section id="menu" class="menu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Our Signature Menu</span>
+
+            <h2>
+                Authentic Flavours Served With Tradition
+            </h2>
+
+            <p>
+                Every dish is freshly prepared using premium ingredients,
+                traditional recipes and authentic Tamil Nadu flavours.
+            </p>
+
+        </div>
+
+        <div class="menu-category">
+
+            <button class="menu-btn active">
+                Wedding Feast
+            </button>
+
+            <button class="menu-btn">
+                Breakfast
+            </button>
+
+            <button class="menu-btn">
+                Lunch
+            </button>
+
+            <button class="menu-btn">
+                Dinner
+            </button>
+
+            <button class="menu-btn">
+                Live Counters
+            </button>
+
+        </div>
+
+        <div class="menu-grid">
+
+            <!-- Item 1 -->
+
+            <div class="menu-card">
+
+                <div class="plate">
+
+                    <img src="assets/images/menu/idli.png"
+                         alt="Idli">
+
+                </div>
+
+                <h3>Soft Idli</h3>
+
+                <p>
+                    Served with Sambar and Coconut Chutney.
+                </p>
+
+            </div>
+
+            <!-- Item 2 -->
+
+            <div class="menu-card">
+
+                <div class="plate">
+
+                    <img src="assets/images/menu/dosa.png"
+                         alt="Dosa">
+
+                </div>
+
+                <h3>Ghee Roast Dosa</h3>
+
+                <p>
+                    Crispy golden dosa prepared live.
+                </p>
+
+            </div>
+
+            <!-- Item 3 -->
+
+            <div class="menu-card">
+
+                <div class="plate">
+
+                    <img src="assets/images/menu/meals.png"
+                         alt="Meals">
+
+                </div>
+
+                <h3>Traditional Meals</h3>
+
+                <p>
+                    Banana leaf feast with authentic side dishes.
+                </p>
+
+            </div>
+
+            <!-- Item 4 -->
+
+            <div class="menu-card">
+
+                <div class="plate">
+
+                    <img src="assets/images/menu/biryani.png"
+                         alt="Biryani">
+
+                </div>
+
+                <h3>Special Biryani</h3>
+
+                <p>
+                    Rich aroma with premium spices.
+                </p>
+
+            </div>
+
+            <!-- Item 5 -->
+
+            <div class="menu-card">
+
+                <div class="plate">
+
+                    <img src="assets/images/menu/sweet.png"
+                         alt="Sweet">
+
+                </div>
+
+                <h3>Traditional Sweets</h3>
+
+                <p>
+                    Freshly prepared desserts for celebrations.
+                </p>
+
+            </div>
+
+            <!-- Item 6 -->
+
+            <div class="menu-card">
+
+                <div class="plate">
+
+                    <img src="assets/images/menu/live-counter.png"
+                         alt="Live Counter">
+
+                </div>
+
+                <h3>Live Food Counter</h3>
+
+                <p>
+                    Dosa, Chaat and more prepared in front of guests.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        GALLERY SECTION
+=========================== -->
+<section id="gallery" class="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Our Gallery</span>
+
+            <h2>
+                Moments Filled With Taste & Happiness
+            </h2>
+
+            <p>
+                Every celebration tells a story. Explore our collection
+                of weddings, receptions, birthday celebrations and
+                traditional feasts served with love.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item large">
+                <img src="assets/images/gallery/gallery-1.jpg" alt="Wedding Catering">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/gallery-2.jpg" alt="Banana Leaf Meals">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/gallery-3.jpg" alt="Live Counter">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/gallery-4.jpg" alt="Traditional Sweets">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery/gallery-5.jpg" alt="Corporate Catering">
+            </div>
+
+            <div class="gallery-item large">
+                <img src="assets/images/gallery/gallery-6.jpg" alt="Grand Buffet">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================
+        OUR CATERING PROCESS
+=================================== -->
+
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>How We Work</span>
+
+            <h2>
+
+                Our Catering Process
 
             </h2>
 
             <p>
 
-                (Content will be added in Phase 2)
+                From your first enquiry to the final serving,
+                we ensure every step is carefully planned
+                to make your event memorable.
 
             </p>
 
         </div>
 
-    </section>
+        <div class="process-grid">
 
-    <!-- ===================== -->
-    <!-- Services -->
-    <!-- ===================== -->
+            <div class="process-card">
 
-    <section class="services">
+                <div class="process-number">
+                    01
+                </div>
 
-        <div class="container">
+                <i class="fa-solid fa-phone"></i>
 
-            <h2>
+                <h3>
 
-                Our Catering Services
+                    Contact Us
 
-            </h2>
+                </h3>
+
+                <p>
+
+                    Share your event details, guest count,
+                    location and preferred menu.
+
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <i class="fa-solid fa-clipboard-list"></i>
+
+                <h3>
+
+                    Menu Planning
+
+                </h3>
+
+                <p>
+
+                    Together we prepare a menu perfectly
+                    suited for your occasion and budget.
+
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <i class="fa-solid fa-kitchen-set"></i>
+
+                <h3>
+
+                    Fresh Preparation
+
+                </h3>
+
+                <p>
+
+                    Our chefs prepare every dish using
+                    fresh ingredients and traditional recipes.
+
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    04
+                </div>
+
+                <i class="fa-solid fa-utensils"></i>
+
+                <h3>
+
+                    Grand Service
+
+                </h3>
+
+                <p>
+
+                    We serve your guests with hospitality,
+                    quality and professionalism.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================
+            TESTIMONIALS
+=================================== -->
+<section id="testimonials" class="testimonials">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Words From Our Happy Hosts</span>
+
+            <h2>Celebrations We've Been Proud To Serve</h2>
+
+            <p>
+                Every event is special to us. Here's what our customers
+                have shared about their experience with Nalan Catering.
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Excellent food quality, perfect service and every
+                    guest appreciated the traditional taste. Highly
+                    recommended for weddings."
+                </p>
+
+                <div class="customer">
+
+                    <img src="assets/images/testimonials/customer1.jpg"
+                         alt="Customer">
+
+                    <div>
+
+                        <h4>Arun Kumar</h4>
+
+                        <span>Wedding Function</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Professional team, punctual service and delicious
+                    food. They handled our corporate event perfectly."
+                </p>
+
+                <div class="customer">
+
+                    <img src="assets/images/testimonials/customer2.jpg"
+                         alt="Customer">
+
+                    <div>
+
+                        <h4>Priya S.</h4>
+
+                        <span>Corporate Event</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Our family function became memorable because of
+                    their hospitality and authentic South Indian meals."
+                </p>
+
+                <div class="customer">
+
+                    <img src="assets/images/testimonials/customer3.jpg"
+                         alt="Customer">
+
+                    <div>
+
+                        <h4>Ramesh & Family</h4>
+
+                        <span>Family Celebration</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================
+            CONTACT
+=================================== -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <span class="section-tag">
+
+                    Contact Us
+
+                </span>
+
+                <h2>
+
+                    Let's Plan Your Next Celebration
+
+                </h2>
+
+                <p>
+
+                    Whether it's a wedding, reception, birthday,
+                    corporate event or family gathering, we'd love
+                    to make your occasion unforgettable.
+
+                </p>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <h4>Call Us</h4>
+
+                        <p>+91 XXXXX XXXXX</p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <h4>Location</h4>
+
+                        <p>Madurai, Tamil Nadu</p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h4>Email</h4>
+
+                        <p>info@nalancatering.com</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+
+                <form>
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        required>
+
+                    <input
+                        type="number"
+                        placeholder="Expected Guests">
+
+                    <input
+                        type="date">
+
+                    <textarea
+                        rows="6"
+                        placeholder="Tell us about your event"></textarea>
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        Send Enquiry
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================
+            FOOTER
+=================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img src="assets/images/logo/logo.png"
+                     alt="Logo"
+                     class="footer-logo">
+
+                <p>
+
+                    Bringing authentic Tamil Nadu flavours
+                    to weddings, receptions, corporate
+                    events and celebrations.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#gallery">Gallery</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Our Services</h3>
+
+                <ul>
+
+                    <li>Wedding Catering</li>
+
+                    <li>Corporate Events</li>
+
+                    <li>Birthday Parties</li>
+
+                    <li>Outdoor Catering</li>
+
+                    <li>Live Food Counters</li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
 
             <p>
 
-                (Coming Next)
+                © 2026 Nalan Catering. All Rights Reserved.
 
             </p>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- ===================== -->
-    <!-- Gallery -->
-    <!-- ===================== -->
+</footer>
 
-    <section class="gallery">
+<script src="assets/js/main.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/hero.js"></script>
+<!-- External Libraries -->
 
-        <div class="container">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 
-            <h2>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 
-                Food Gallery
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
-            </h2>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            <p>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
-                (Coming Next)
+<!-- Project JS -->
 
-            </p>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/hero.js"></script>
 
-        </div>
-
-    </section>
-
-    <!-- ===================== -->
-    <!-- Contact -->
-    <!-- ===================== -->
-
-    <section class="contact">
-
-        <div class="container">
-
-            <h2>
-
-                Contact Us
-
-            </h2>
-
-            <p>
-
-                (Coming Next)
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- ===================== -->
-    <!-- Footer -->
-    <!-- ===================== -->
-
-    <footer>
-
-        <div class="container">
-
-            © 2026 Nalan Catering.
-
-            All Rights Reserved.
-
-        </div>
-
-    </footer>
-
-    <!-- ===================== -->
-    <!-- GSAP -->
-    <!-- ===================== -->
-
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js">
-    </script>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js">
-    </script>
-
-    <script src="assets/js/main.js"></script>
-
+<script src="assets/js/loader.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/testimonial.js"></script>
 </body>
 
 </html>
