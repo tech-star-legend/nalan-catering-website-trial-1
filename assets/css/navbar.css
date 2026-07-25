@@ -11,7 +11,7 @@
 
     z-index: 9999;
 
-    padding: 22px 0;
+    padding: 18px 0;
 
     transition: all .4s ease;
 
@@ -31,7 +31,7 @@
 
     border-bottom: 1px solid rgba(255,255,255,.25);
 
-    padding: 14px 0;
+    padding: 12px 0;
 
 }
 
@@ -52,36 +52,48 @@
 /* =========================================================
    LOGO
 ========================================================= */
+/* =========================================================
+   LOGO
+========================================================= */
+/* ==========================
+   LOGO
+========================== */
 
 .logo{
 
     display:flex;
-
     align-items:center;
-
     gap:12px;
+    text-decoration:none;
+    flex-shrink:0;
 
 }
 
-.logo a{
+.logo img{
+
+    width:78px;
+    height:78px;
+    object-fit:contain;
+    display:block;
+    transition:.35s ease;
+
+}
+
+.logo span{
 
     font-family:'Cormorant Garamond',serif;
-
-    font-size:2.2rem;
-
+    font-size:1.8rem;
     font-weight:700;
-
     color:var(--primary);
-
-    letter-spacing:2px;
-
-    transition:.3s;
+    letter-spacing:1px;
+    line-height:1.1;
 
 }
 
-.logo a:hover{
+.navbar.scrolled .logo img{
 
-    color:var(--secondary);
+    width:66px;
+    height:66px;
 
 }
 
